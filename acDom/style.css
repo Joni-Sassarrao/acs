@@ -17,19 +17,19 @@ header p{
     font-weight: bold;
 }
 
-.imagens img{
+img{
     width: 20%;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
-.imagem{
+.imagem img{
     display: flex;
     flex-direction: row;
     align-items: start;
 }
 
-.imagem p{
+.imagem img p{
     padding: 50px;
     font-size: 25px;
 }
