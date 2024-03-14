@@ -172,5 +172,3 @@ function final(){
 }
 
 final();
-//h2.setAttribute('type', 'text')
-//h2.classList.add('')
