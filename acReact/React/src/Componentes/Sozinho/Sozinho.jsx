@@ -1,7 +1,8 @@
 function Sozinho(){
     return(
         <>
-        <h2>Apresentação Pessoal</h2>
+        <h1 className="sozinho">Apresentação Pessoal</h1>
+        <br/>
         </>
     )
 }

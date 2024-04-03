@@ -6,10 +6,12 @@ import Form from "../Fomulario/Form";
 function Container(){
     return(
         <>
-        <Sozinho/>
-        <Imagens/>
-        <Card/>
-        <Form/>
+        <div className="container">
+            <Sozinho/>
+            <Imagens/>
+            <Card/>
+            <Form/>
+        </div>
         </>
     )
 }
