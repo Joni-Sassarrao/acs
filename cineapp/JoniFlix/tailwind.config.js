@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'montaguSlab':  "Montagu Slab"
+    },
     extend: {
       colors:{
         'primary-fundo': "#070226"
