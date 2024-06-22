@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function NavBar() {
     return ( 
         <nav>
-            <ul className="flex gap-3">
-                <li><Link to="/"> Home</Link></li>
-                <li><Link to="filmes">Filmes</Link></li>
-                <li><Link to="favoritos">Favoritos</Link></li>
+            <ul className="flex gap-3 text-3xl">
+                <li><NavLink className="hover:underline hover:text-gray-300 hover:duration-200" to="/"> Home</NavLink></li>
+                <li><NavLink className="hover:underline hover:text-gray-300 hover:duration-200" to="filmes">Filmes</NavLink></li>
+                <li><NavLink className="hover:underline hover:text-gray-300 hover:duration-200" to="favoritos">Favoritos</NavLink></li>
             </ul>
         </nav>
     )

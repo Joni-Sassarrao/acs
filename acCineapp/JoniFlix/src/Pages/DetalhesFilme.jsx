@@ -16,8 +16,10 @@ export default function DetalhesFilme() {
         <>
         <h1>Detalhes Filme</h1>
         <img src={`https://image.tmdb.org/t/p/w1280/${filme.backdrop_path}`}/>
-        <p>{filme.title}</p>
-        <p>{filme.vote_average}</p>
+        <p className="text-white">{filme.title}</p>
+        <p className="text-white">{filme.vote_average}</p>
+        <p className="text-white">{filme.overview}</p>
+        <p className="text-white">{filme.release_date}</p>
         </> 
-     );
+    );
 }
