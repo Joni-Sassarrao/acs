@@ -14,12 +14,17 @@ export default function DetalhesFilme() {
     },[])
     return (
         <>
-        <h1>Detalhes Filme</h1>
-        <img src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`}/>
-        <p className="text-white">{filme.title}</p>
-        <p className="text-white">{filme.vote_average}</p>
-        <p className="text-white">{filme.overview}</p>
-        <p className="text-white">{filme.release_date}</p>
+            <h1 className="flex justify-center text-2xl text-white font-MontaguSlab mt-5 mb-10">Detalhes do Filme {filme.title}</h1>
+            <div className="flex flex-row ml-36 m-4 border rounded-lg w-[1500px]">
+                <img className="m-4 w-80 rounded-lg border" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`}/>
+                <div className="flex flex-col m-3 font-K2D">
+                    <p className="text-white text-3xl mb-5">{filme.title}</p>
+                    <p className="text-white text-lg mb-5 w-[950px]">{filme.overview}</p>
+                    <p className="text-white mb-4">Nota do Metacritic {filme.vote_average}</p>
+                    <p className="text-white">O filme será lançado nessa data: {filme.release_date}</p>
+                </div>
+            </div>
+            <div className="bg-black h-[93px]"></div>
         </> 
-    );
+    )
 }
