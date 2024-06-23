@@ -7,7 +7,8 @@ export default {
   theme: {
     fontFamily:{
       'K2D': ['K2D', 'sans-serif'],
-      'MontaguSlab': ['Montagu Slab', 'serif']
+      'MontaguSlab': ['Montagu Slab', 'serif'],
+      'Montserrat': ['Montserrat', 'sans-serif;']
     },
     extend: {},
   },
