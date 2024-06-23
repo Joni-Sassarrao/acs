@@ -26,14 +26,13 @@ export default function Home(){
     return (
         <>
         <h1 className="flex justify-center text-3xl text-white font-MontaguSlab mt-10 mb-10">Filmes Novos</h1>
-
         <div className="flex flex-col w-[1780px] m-8 ml-[55px]">
             <Slider {...settings}>
                 {filmes.map(filme => (
                     <div className="ml-[85px]" key={filme.id}>
                         <img className="rounded-lg border" src={`https://image.tmdb.org/t/p/w400/${filme.poster_path}`} alt={filme.title} />
                         <h1 className="text-white flex justify-start mt-1 mb-2">{filme.title}</h1>
-                        <Link to={`/${filme.id}`} className="bg-white text-black rounded-lg flex items-center mr-[190px] justify-center font-K2D font-bold p-1">
+                        <Link to={`/${filme.id}`} className="hover:bg-gray-400 hover:duration-200 bg-white text-black rounded-lg flex items-center mr-[190px] justify-center font-K2D font-bold p-1">
                             Detalhes do Filme
                         </Link>
                     </div>
@@ -56,7 +55,7 @@ export default function Home(){
                             </div>
                         </>
                     ))
-                    }
+                }
             </div>
         </div>
         </>
